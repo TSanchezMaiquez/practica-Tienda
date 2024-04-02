@@ -5,15 +5,23 @@ li a {
     color: white;
 }
 .navbar-brand{
-    text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 60px;
     color: rgb(255, 255, 255);
-    margin: 0 auto;
     font-size: 25px;
     font-style:italic;
+    margin-left: 50px;
 }
 
 img{
-    width: 50px;
+    border-radius: 25px;
+   
+}
+a {
+    font-family: "Dancing Script";
+    font-size: 24px;
+    margin-left: 50px;
+}
+.navbar {
+    padding: 0px;
 }

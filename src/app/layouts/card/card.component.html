@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card-container d-flex justify-content-between">
+    <div *ngFor="let articulo of articulos" class="card mb-3" style="max-width: 30%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="articulo.getImagen()" class="img-fluid rounded-start" alt="Imagen de articulo {{articulo.getNombre()}}">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{articulo.getNombre()}}</h5>
+            <p class="card-text">{{articulo.getDescripcion()}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
