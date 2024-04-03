@@ -1,7 +1,7 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    height: 150px;
+    height: auto;
     background-color: rgb(0, 0, 0);
    
   }
@@ -10,7 +10,7 @@
     flex: 0 0 calc(33.33% - 10px); /* Esto asegura que cada tarjeta ocupe aproximadamente un tercio del contenedor y deja un espacio entre ellas */
     margin-bottom: 10px; /* Espacio entre las tarjetas */
     border-radius: 20px;
-    margin: 15px;
+    margin: 20px;
     height: 122px;
     background-color: rgb(217, 204, 198);
   }

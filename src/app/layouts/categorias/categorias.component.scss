@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+    font-family: "Dancing Script";
+    font-size: 50px;
+}
+#topSellersTab, .nav {
+    background-color: black;
+}
+
+img {
+   
+    width: 200px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 15px;
+    border: 3px solid rgb(197, 197, 197);
+}
+#topSellersTab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.category-wrapper{
+    height: 300px; 
+}
+a{
+    color: white;
+}
+.nav-link.active {
+    background-color: white;
+    color: rgb(0, 0, 0); /* Cambia el color a tu elección */
+    border-radius: 15px;
+  }
+.nav-link:hover {
+    color: rgb(207, 162, 100); /* Cambia el color a tu elección */
+}
+  

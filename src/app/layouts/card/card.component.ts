@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Articulo } from './card.model';
+import { Articulo } from './articulo.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({

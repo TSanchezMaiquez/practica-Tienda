@@ -4,8 +4,9 @@ export class Articulo {
     private nombre: string;
     private imagen: string;
     private descripcion: string;
+    private precio?: number[];
 
-    constructor( id: number,  nombre: string, imagen: string, descripcion: string) 
+    constructor( id: number,  nombre: string, imagen: string, descripcion: string, precio?: number[]) 
     {
         this.id = id
         this.nombre = nombre
@@ -42,5 +43,13 @@ export class Articulo {
 
     public setDescripcion(descripcion: string): void {
         this.descripcion = descripcion;
+    }
+    public getPrecio(): number[] | undefined {
+        return this.precio;
+    }
+
+    
+    public setPrecio(precio?: number[]): void {
+        this.precio = precio;
     }
 }
