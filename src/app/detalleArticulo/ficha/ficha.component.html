@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-fluid" [src]="articulo?.getImagen()" alt="Imagen del artículo">
+    </div>
+    <div class="col-md-6">
+      <h2>{{ articulo?.getNombre() }}</h2>
+      <p><strong>Precio:</strong> {{ articulo?.getPrecio() | number:'1.2-2' }}€</p>
+      <p><strong>Color:</strong> Multicolor</p>
+      <img class="img-fluid2" [src]="articulo?.getImagen()" alt="Imagen del artículo (pequeña)">
+      <p><strong>Talla:</strong> Elige talla</p>
+
+      <div class="tallas">
+        <button *ngFor="let talla of tallasDisponibles; let i = index" class="talla" [class.tachada]="!estaDisponible(i)">{{ talla }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  

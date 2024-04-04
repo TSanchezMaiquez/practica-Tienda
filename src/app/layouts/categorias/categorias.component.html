@@ -3,15 +3,16 @@
   <h1>Shop by category</h1>
   <div class="nav justify-content-center mb-10">
    
-      <a class="nav-link active" href="#topSellersTab" data-bs-toggle="tab">Women</a>
-      <a class="nav-link" href="#topSellersTab" data-bs-toggle="tab">Men</a>
-      <a class="nav-link" href="#topSellersTab" data-bs-toggle="tab">Kids</a>
+      <a class="nav-link active" href="#topSellersTab" data-bs-toggle="tab"  >Women</a>
+      <a class="nav-link" href="#topSellersTab" data-bs-toggle="tab" (click)="cambiarInformacionEnlaceSeleccionado('Men')" >Men</a>
+      <a class="nav-link" href="#topSellersTab" data-bs-toggle="tab" (click)="cambiarInformacionEnlaceSeleccionado('kids')" >Kids</a>
   </div>
   
     <div id="topSellersTab" class="tab-pane fade show active" role="tabpanel">
-      <div class="category" *ngFor="let articulo of articulos">
-        <img [src]="articulo.getImagen()" alt="'Categoria: '+ imagen.getNombre() ">
-    </div>
+      <div class="category" *ngFor="let articulo of articulos" >
+        <img [src]="articulo.getImagen()" alt="'Categoria: '+ articulo.getNombre()" (click)="navegarAFicha()">
+        <h3>{{articulo.getNombre()}}</h3>
+      </div>
     </div>
 </div>
 

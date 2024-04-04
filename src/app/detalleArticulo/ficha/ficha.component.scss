@@ -1,0 +1,40 @@
+.img-fluid2{
+    padding: 15px;
+    height: 350px;
+    width: 230px;
+    border: 3px solid black;
+}
+
+.img-fluid{
+    padding: 15px;
+    background-color: black;
+}
+.talla.tachada {
+    text-decoration: line-through; 
+    color: #999; 
+  }
+button{
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 15px;
+    width: 60px;
+    margin: 20px;
+    margin-bottom: 15px;
+    display: inline;
+}
+.tallas {
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 285px;
+}
+h2, p {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 15px;
+}
+
+h2{
+    border-bottom: 3px solid black;
+}

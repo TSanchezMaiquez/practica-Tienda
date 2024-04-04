@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Articulo } from '../card/articulo.model'; 
+import { Articulo } from '../../articulo/articulo.model'; 
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categorias',
@@ -9,8 +10,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CategoriasComponent implements OnInit{
   articulos: Articulo[] = [];
+  enlaceSeleccionado: string = "Woman";
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.obtenerArticulosRest();
@@ -27,5 +29,10 @@ export class CategoriasComponent implements OnInit{
       }
     )
   }
-
+  public navegarAFicha(): void {
+    this.router.navigate(['detalle', this.enlaceSeleccionado]);
+  }  
+  public cambiarInformacionEnlaceSeleccionado (texto: string): void {
+    this.enlaceSeleccionado = texto;
+  }
 }

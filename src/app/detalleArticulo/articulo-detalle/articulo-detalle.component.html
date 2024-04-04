@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card position-relative">
+        <img class="card-img-top" [src]="articulo?.getImagen()" alt="Imagen del artículo" (click)="onClickArticulo()">
+        <button class="btn btn-outline-secondary" [class.active]="articulo?.getFavorito()">Favorito</button>
+        <div class="card-body">
+            <h5 class="card-title">{{ articulo?.getNombre() }}</h5>
+            <p class="card-text">{{ articulo?.getDescripcion() }}</p>
+            <p class="precio">
+                Precio: 
+                <span>{{ articulo?.getPrecio() | number:'1.2-2' }}€</span>
+            </p>
+            <p class="descuento">
+                <span *ngIf="articulo?.getDescuento()">{{ articulo?.getDescuento() | number:'1.2-2' }}€</span>
+            </p>
+        </div>
+     </div>
+</div> 
+  
+

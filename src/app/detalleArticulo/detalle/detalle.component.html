@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Categoria: {{categoria}}</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let articulo of articulos">
+      <app-articulo-detalle [articulo]="articulo"></app-articulo-detalle>
+    </div>
+  </div>
+</div>
+
